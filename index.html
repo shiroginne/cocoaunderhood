@@ -25,13 +25,21 @@
 				color: lightgrey;
 			}
 		</style>
+		<script type="text/javascript">
+			var items = ["macOS", "iOS", "☕️", "🤷", "👩🏻‍💻","👨🏼‍💻", "MVVC", "MVC", "Viper", "Xcode", "Apple?", "iPhone", "MBP", "Tim!", "Steve?"]
+		    setInterval(function(){
+				var element = document.getElementById("chng")
+				element.innerHTML = items[Math.floor(Math.random()*items.length)]
+		    }, 3000);
+		</script>
 	</head>
 	<body>
 		<div class="title">
 			<div><strong>cocoa</strong>underhood</div>
 		</div>
 		<div class="undertext">
-			twitter: <a	href="https://twitter.com/cocoaunderhood" target="_blank">@cocoaunderhood</a>
+			<br>[ <span id="chng">macOS</span> ]<br><br>
+			t: <a	href="https://twitter.com/cocoaunderhood" target="_blank">@cocoaunderhood</a>
 		</div>
 	</body>
 </html>
